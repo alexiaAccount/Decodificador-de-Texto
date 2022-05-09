@@ -1,0 +1,152 @@
+html, body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	background: #7159c1
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grip-template-rows: 20hv 70hv 70hv 10hv;
+	grid-template-areas: "h h"
+						"m a"
+						"f f"
+}
+
+header {
+	display: inline;
+	background: slateblue;
+	height: 70px;
+	grid-area: h;
+}
+
+.logo {
+	display: inline-block;
+    margin-bottom: 1px;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+h1 {
+	display: inline-block;
+	margin-left: 400px;
+	text-transform: uppercase;
+	text-align: center;
+	color: darkblue;
+	font-family: 'Inter';
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+main {
+	background: lightgrey;
+	height: 470px;
+	grid-area: m;
+}
+
+.inputTexto {
+	margin-top: 40px;
+	margin-left: 40px;
+	border-radius: 10px;
+	width: 500px;
+	height: 300px;
+	resize: none;
+}    
+
+.aviso {
+	display: relative;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	position: absolute;
+	margin-left: 30px;
+	width: 220px;
+	height: 18px;
+	left: 300px;
+	top: 420px;
+}
+
+.botoesFazer {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-left: 70px;
+	width: 400px;
+	height: 67px;
+}
+
+.encriptar {
+	width: 100px;
+	background: #0A3871;
+	border-radius: 24px;
+	color: white;
+
+}
+
+.descriptar {
+	width: 100px;
+	margin-left: 20px;
+	background: white;
+	border-radius: 24px;
+	color: black;
+}
+
+
+aside {
+	background: gainsboro;
+	height: 470px;
+	grid-area: a;
+}
+
+.mensagem {
+	margin-top: 40px;
+	margin-left: 120px;
+	resize: none;
+	width: 400px;
+	height: 300px;
+	background: white;
+	border-radius: 10px;
+	background-image: url(menina-lupa.png);
+	background-repeat: no-repeat; 
+}
+
+.botoesRefazer {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-left: 200px;
+	width: 400px;
+	height: 67px;
+}
+
+.botao-copiar {
+	width: 100px;
+	background: #0A3871;
+	border-radius: 24px;
+	color: white;
+}
+
+.botao-limpar {
+	width: 100px;
+	margin-left: 20px;
+	background: white;
+	border-radius: 24px;
+	color: black;
+}
+
+
+footer {
+	background: darkgrey;
+	height: 50px;
+	grid-area: f;
+}
+
+.copyright {
+	
+	color: #ffffff;
+	font-size: 14px;
+	margin: 1em;
+	text-align: center;
+}
